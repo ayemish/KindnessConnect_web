@@ -210,6 +210,8 @@ const CreateRequest = () => {
                                 value={formData.story}
                                 disabled={isGenerating}
                             ></textarea>
+                            {/* AI Story Generation Button Temporarily Disabled */}
+                            {/*
                             <button 
                                 type="button"
                                 onClick={handleGenerateStory}
@@ -218,6 +220,7 @@ const CreateRequest = () => {
                             >
                                 {isGenerating ? 'Generating...' : 'Generate Draft'}
                             </button>
+                            */}
                         </div>
                     </div>
                     {/* End Story Textarea */}
