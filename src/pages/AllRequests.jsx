@@ -63,6 +63,10 @@ const AllRequests = () => {
 
                         <div className="flex-1 min-w-0"> 
                             <Link to={`/requests/${req.id}`} className="font-bold text-lg hover:text-brand-300 truncate block">{req.title}</Link>
+                            
+                            <p className="text-sm text-gray-700 font-semibold mt-0.5">
+                                Requester: {req.requester_name || "N/A"}
+                            </p>
                             <p className="text-xs text-gray-500 truncate">Requester ID: {req.requester_uid.substring(0, 8)}...</p>
                         </div>
                         

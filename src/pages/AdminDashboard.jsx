@@ -109,6 +109,8 @@ const AdminDashboard = () => {
                                         </div>
                                     )}
 
+
+
                                     {/* Details & Deep Link */}
                                     <div className="flex-1 min-w-0">
                                         {/* Clickable Title leads to details page for review */}
@@ -118,8 +120,16 @@ const AdminDashboard = () => {
                                         >
                                             {req.title}
                                         </Link>
+
+                                        {/* ADDED REQUESTER NAME HERE */}
+                                        <p className="text-sm text-gray-700 font-semibold mt-0.5">
+                                            Requester: {req.requester_name || "Unknown"}
+                                        </p>
+                                        
                                         <p className="text-sm text-gray-500">Category: {req.category} | Goal: ${req.goal_amount}</p>
                                     </div>
+
+
 
                                     {/* BUTTON COLORS REVERTED TO BRAND */}
                                     <div className="flex items-center gap-3 flex-shrink-0">
